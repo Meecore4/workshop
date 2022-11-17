@@ -8,9 +8,13 @@
     <style>
         body {
             min-height: 200vh;
+            display : flex;
+            flex-direction: column-reverse;
         }
         nav {
             box-shadow: 10px 5px 5px 5px rgba(255, 0, 0, 0.5);
+            position : sticky;
+            bottom : 1rem;
         }
         ul {
             display: flex;
@@ -24,6 +28,22 @@
             padding: 1rem;
             display: inline-block;
         }
+
+
+
+
+@media screen and (min-width : 990px){
+    body{
+        flex-direction: column;
+        
+    }
+
+    nav{
+        top : 0;
+    }
+
+}
+
     </style>
 </head>
 <body>
